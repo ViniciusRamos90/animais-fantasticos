@@ -16,12 +16,14 @@
 }
 
 .modal {
+  width: 80vw;
+  max-width: 600px;
   background: white;
   padding: 40px;
   border: 10px solid #fb5;
   box-shadow: 0 0 0 10px white; 
   position: relative;
-  min-width: 300px;
+  box-sizing: border-box;
 }
 
 @keyframes modal {
@@ -47,11 +49,8 @@
   position: absolute;
   border: 4px solid white;
   border-radius: 50%;
-  background: #e54;
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,.3);/*efeito de sombra*/
-  font-size: 1.2rem;
-  color: white;
-  font-family: 'IBM Plex Mono', monospace;
+  background: #e54 url('../img/fechar.svg') no-repeat center center;
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,.3);/*efeito de sombra*/   
   cursor: pointer;
 }
   
@@ -66,6 +65,8 @@
   width: 100%;
   padding: .7rem .5rem;
   box-sizing: border-box;
+  border: 2px solid #222;
+  border-radius: 0px;
 } 
 
 .modal button[type="submit"] {
